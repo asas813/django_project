@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Bookmark Update{% endblock %}
+
+{% block content %}
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'bookmark/bookstyle.css' %}">
+
+    <h1>Update Site name or URL</h1>
+    <hr>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <hr>
+        <input type="submit" value="Update" class="btn btn-success btn-sm">
+        <a href="{% url 'bookmark:detail' pk=bookmark.id %}" class="btn btn-primary btn-sm">Back</a>
+    </form>
+{% endblock %}

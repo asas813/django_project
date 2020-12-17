@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Django Project Home{% endblock %}
+{% block content %}
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'home/homestyle.css' %}">
+
+    <h4>CHAHAYEON's Django Project</h4>
+    <hr>
+    <p>상단 메뉴바를 클릭하여 앱으로 이동할 수 있습니다</p>
+{% endblock %}

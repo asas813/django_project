@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Bookmark Add{% endblock %}
+
+{% block content %}
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'bookmark/bookstyle.css' %}">
+
+    <h1>Enter Site name and URL</h1>
+    <hr>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <hr>
+        <input type="submit" value="Add" class="btn btn-info btn-sm">
+        <a href="{% url 'bookmark:list' %}" class="btn btn-primary btn-sm">Back List</a>
+    </form>
+{% endblock %}

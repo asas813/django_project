@@ -1,0 +1,34 @@
+body {
+    background: white url("images/logo.png") no-repeat;
+    background-position: center;
+    background-size: 10%;
+    height: 500px;
+    border-top: 10px solid #ccc;
+}
+
+title {
+    color: #c80;
+    font-weight: bold;
+}
+
+li a {
+    color: green;
+}
+
+h4 {
+    color: #5AAEFF;
+    font-size: 30px;
+    text-align: center;
+    transition: all 1s;
+}
+
+h4:hover {
+    color: #A566FF;
+    font-size: 30px;
+}
+
+p {
+    text-align: center;
+    text-style: bold;
+    color: navy;
+}
